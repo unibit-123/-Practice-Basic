@@ -6,12 +6,40 @@
     <title>WEB2 - CSS</title>
     <!-- 문자 호환 (글자 깨짐방지) -->
     <meta charset="utf-8">
-    <style>
-      a {
-        color:green;
-        text-decoration: none;
-      }
-    </style>
+  <style>
+    body{
+      margin:0;
+    }
+
+    #active {
+      color:red;
+    }
+
+    a {
+      color:black;
+      text-decoration: none;
+    }
+
+    h1{
+      font-size: 70px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:80px;
+      margin:0;
+      padding: 40px;
+    }
+
+    .saw {
+      color:gray;
+    }
+
+  </style>
+
 </head>
 
 <body>
@@ -19,8 +47,8 @@
 
     <!-- ol,ul,li 태그 (순서 또는 구분을 해줌) -->
     <ol>
-      <li><a href="1.html">HTML</a></li>
-      <li><a href="2.html" style="color:red; text-decoration:underline;">CSS</a></li>
+      <li><a href="1.html" class="saw">HTML</a></li>
+      <li><a href="2.html" class="saw" id="active">CSS</a></li>
       <li><a href="3.html">JavaScript</a></li>
     </ol>
 
