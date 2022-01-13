@@ -6,53 +6,8 @@
     <title>WEB2 - CSS</title>
     <!-- 문자 호환 (글자 깨짐방지) -->
     <meta charset="utf-8">
-  <style>
-    body{
-      margin:0;
-    }
-    a {
-      color:black;
-      text-decoration: none;
-    }
-
-    h1{
-      font-size: 70px;
-      text-align: center;
-      border-bottom:1px solid gray;
-      margin:0;
-      padding:20px;
-    }
-    ol{
-      border-right:1px solid gray;
-      width:80px;
-      margin:0;
-      padding: 20px;
-    }
-    #grid{
-      display: grid;
-      grid-template-columns: 150px 1fr;
-    }
-    #grid ol{
-      padding-left: 50px;
-    }
-    #grid #article{
-      padding-left: 30px;
-    }
-    /* #grid, ol, h1 태그의 해당되는 미디어 쿼리 코드  */
-    @media(max-width:800px){
-      #grid{
-        display: block;
-      }
-      ol{
-        border-right:none;
-      }
-      h1{
-          border-bottom:none;
-    }
-  </style>
-
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <h1><a href="index.html">WEB</a></h1>
   <div id="grid">
@@ -69,7 +24,7 @@
     What is CSS?
     CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language. The separation of HTML from CSS makes it easier to maintain sites, share style sheets across pages, and tailor pages to different environments. This is referred to as the separation of structure (or: content) from presentation.
 </div>
-
+</div>
 
 </body>
 </html>
