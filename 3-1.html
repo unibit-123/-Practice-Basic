@@ -22,20 +22,11 @@ var target = document.body;
     this.value = 'day'
     target.style.backgroundColor='black';
     target.style.color='white';
-    document.querySelector('a').style.color='white';
-    document.querySelectorAll('li').forEach(i=>{
-    i.style.color='white';
-    i.querySelector('a').style.color='white';
-    })
+
   } else {
     this.value = 'night'
     target.style.backgroundColor='white';
     target.style.color='black';
-    document.querySelector('a').style.color='black';
-    document.querySelectorAll('li').forEach(i=>{
-    i.style.color='black';
-    i.querySelector('a').style.color='black';
-    })
   }
 ">
 
@@ -56,29 +47,6 @@ longside HTML and CSS.[11] Over 97% of websites use JavaScript on the client sid
  often incorporating third-party libraries.[13] All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.
 </div>
 </div>
-<input type="button" value="night" onclick="
-  if(this.value === 'night'){
-    this.value = 'day'
-    document.body.style.backgroundColor='black';
-    document.body.style.color='white';
-    document.querySelector('a').style.color='white';
-    document.querySelectorAll('li').forEach(i=>{
-    i.style.color='white';
-    i.querySelector('a').style.color='white';
-    })
-  } else {
-    this.value = 'night'
-    document.body.style.backgroundColor='white';
-    document.body.style.color='black';
-    document.querySelector('a').style.color='black';
-    document.querySelectorAll('li').forEach(i=>{
-    i.style.color='black';
-    i.querySelector('a').style.color='black';
-    })
-  }
-">
-
-
 
 
 </body>
