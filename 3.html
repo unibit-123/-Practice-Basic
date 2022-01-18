@@ -16,6 +16,13 @@
 <!-- &nbsp; = 띄어쓰기 -->
 &nbsp;&nbsp;
 
+<!-- 반복문 CSS
+var alist = document.querySelectorAll('a');
+var i = 0;
+while(i < alist.length ){
+alist[i].style.color = 'powderblue';
+i=i+1;
+} -->
 <input type="button" value="night" onclick="
 var target = document.body;
   if(this.value === 'night'){
@@ -27,6 +34,7 @@ var target = document.body;
     i.style.color='white';
     i.querySelector('a').style.color='white';
     })
+
   } else {
     this.value = 'night'
     target.style.backgroundColor='white';
@@ -56,6 +64,8 @@ longside HTML and CSS.[11] Over 97% of websites use JavaScript on the client sid
  often incorporating third-party libraries.[13] All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.
 </div>
 </div>
+
+&nbsp;&nbsp;
 <input type="button" value="night" onclick="
   if(this.value === 'night'){
     this.value = 'day'
