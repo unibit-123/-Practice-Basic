@@ -7,8 +7,38 @@
 <!-- 문자 호환 (글자 깨짐방지) -->
 <meta charset="utf-8">
 <link rel="stylesheet" href="style.css">
-</head>
 
+<script>
+  function LinksSetColor(color){
+    document.querySelector('a').style.color=color;
+    document.querySelectorAll('li').forEach(i=>{
+    i.style.color=color;
+    i.querySelector('a').style.color=color;
+    })
+  }
+  function BodySetColor(color){
+    document.body.style.color=color;
+  }
+  function BodySetBackgroundcolor(color){
+    document.body.style.backgroundColor=color;
+  }
+  function nightDayHandler(self){
+    var target = document.body;
+    if(self.value === 'night'){
+      self.value = 'day'
+      Body.setBackgroundcolor('black');
+      Body.setColor('white');
+      Links.setColor('white');
+
+    } else {
+      self.value = 'night'
+      Body.setBackgroundcolor('white');
+      Body.setColor('black');
+      Links.setColor('black')
+    }
+  }
+</script>
+</head>
 <body>
 <h1><a href="index.html">WEB</a></h1>
 <br>
@@ -24,28 +54,15 @@ alist[i].style.color = 'powderblue';
 i=i+1;
 } -->
 <input type="button" value="night" onclick="
-var target = document.body;
-  if(this.value === 'night'){
-    this.value = 'day'
-    target.style.backgroundColor='black';
-    target.style.color='white';
-    document.querySelector('a').style.color='white';
-    document.querySelectorAll('li').forEach(i=>{
-    i.style.color='white';
-    i.querySelector('a').style.color='white';
-    })
-
-  } else {
-    this.value = 'night'
-    target.style.backgroundColor='white';
-    target.style.color='black';
-    document.querySelector('a').style.color='black';
-    document.querySelectorAll('li').forEach(i=>{
-    i.style.color='black';
-    i.querySelector('a').style.color='black';
-    })
-  }
+  nightDayHandler(this);
 ">
+
+<input type="button" value="night" onclick="
+  nightDayHandler(this);
+">
+
+
+
 
 <div id="grid">
 
@@ -66,30 +83,6 @@ longside HTML and CSS.[11] Over 97% of websites use JavaScript on the client sid
 </div>
 
 &nbsp;&nbsp;
-<input type="button" value="night" onclick="
-  if(this.value === 'night'){
-    this.value = 'day'
-    document.body.style.backgroundColor='black';
-    document.body.style.color='white';
-    document.querySelector('a').style.color='white';
-    document.querySelectorAll('li').forEach(i=>{
-    i.style.color='white';
-    i.querySelector('a').style.color='white';
-    })
-  } else {
-    this.value = 'night'
-    document.body.style.backgroundColor='white';
-    document.body.style.color='black';
-    document.querySelector('a').style.color='black';
-    document.querySelectorAll('li').forEach(i=>{
-    i.style.color='black';
-    i.querySelector('a').style.color='black';
-    })
-  }
-">
-
-
-
 
 </body>
 </html>
