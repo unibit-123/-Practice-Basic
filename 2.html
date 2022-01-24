@@ -6,10 +6,19 @@
     <title>WEB2 - CSS</title>
     <!-- 문자 호환 (글자 깨짐방지) -->
     <meta charset="utf-8">
+
+    <script src="color.js"> </script>
+
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
+
+    <input type="button" value="night" onclick="
+  nightDayHandler(this);
+
+">
   <div id="grid">
     <!-- ol,ul,li 태그 (순서 또는 구분을 해줌) -->
     <ol>
@@ -20,6 +29,7 @@
 <div id="article">
     <!-- h1 태그 (제목) -->
     <h2>CSS</h2>
+
 
     What is CSS?
     CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language. The separation of HTML from CSS makes it easier to maintain sites, share style sheets across pages, and tailor pages to different environments. This is referred to as the separation of structure (or: content) from presentation.

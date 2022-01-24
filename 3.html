@@ -8,36 +8,8 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="style.css">
 
-<script>
-  function LinksSetColor(color){
-    document.querySelector('a').style.color=color;
-    document.querySelectorAll('li').forEach(i=>{
-    i.style.color=color;
-    i.querySelector('a').style.color=color;
-    })
-  }
-  function BodySetColor(color){
-    document.body.style.color=color;
-  }
-  function BodySetBackgroundcolor(color){
-    document.body.style.backgroundColor=color;
-  }
-  function nightDayHandler(self){
-    var target = document.body;
-    if(self.value === 'night'){
-      self.value = 'day'
-      Body.setBackgroundcolor('black');
-      Body.setColor('white');
-      Links.setColor('white');
+<script src="color.js"> </script>
 
-    } else {
-      self.value = 'night'
-      Body.setBackgroundcolor('white');
-      Body.setColor('black');
-      Links.setColor('black')
-    }
-  }
-</script>
 </head>
 <body>
 <h1><a href="index.html">WEB</a></h1>
@@ -56,12 +28,6 @@ i=i+1;
 <input type="button" value="night" onclick="
   nightDayHandler(this);
 ">
-
-<input type="button" value="night" onclick="
-  nightDayHandler(this);
-">
-
-
 
 
 <div id="grid">

@@ -25,5 +25,14 @@
             document.write(key+' : '+coworkers[key] + '<Br>');
         }
     </script>
+    <h2>Preperty & Method</h2>
+    <script>
+        coworkers.showAll = function() {
+        for(var key in this) {
+            document.write(key+' : '+this[key] + '<Br>');
+        }
+    }
+    coworkers.showAll();
+</script>
 </body>
 </html>

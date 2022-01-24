@@ -6,10 +6,19 @@
 <title>WEB1 - html</title>
 <!-- 문자 호환 (글자 깨짐방지) -->
 <meta charset="utf-8">
+
+<script src="color.js"> </script>
+
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1><a href="index.html">WEB</a></h1>
+
+<input type="button" value="night" onclick="
+  nightDayHandler(this);
+">
+
 <!-- ol,ul,li 태그 (순서 또는 구분을 해줌) -->
 <div id="grid">
 <ol>
@@ -21,6 +30,7 @@
 <!-- h1 태그 (제목) -->
 <div id="article">
 <h2>HTML</h2>
+
 
 What is HTML? <br>
 HTML is the language for describing the structure of Web pages. HTML gives authors the means to:
